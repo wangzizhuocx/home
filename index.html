@@ -19,7 +19,7 @@
                         <a href="#home">主页</a>
                     </li>
                     <li>
-                        <a href="#overview">关于我们</a>
+                        <a href="#overview1">关于我们</a>
                     </li>
                     <li>
                         <a href="#cooperate">产品服务</a>
@@ -41,7 +41,7 @@
                 <a href="#home">主页</a>
             </li>
             <li>
-                <a href="#overview">关于我们</a>
+                <a href="#overview1">关于我们</a>
             </li>
             <li>
                 <a href="#cooperate">商业合作</a>
@@ -59,7 +59,7 @@
                 <p>湖南梨树园涂料有限公司</p>
             </div>
 
-            <div id="overview" class="overview_cs2">
+            <div id="overview1" class="overview_cs2">
                 <h3 class="overview_title">
                     公司介绍:
                     <span>永远专注于涂料，让中国建筑不再有劣质涂料工程。</span>
@@ -237,12 +237,18 @@
 <script>
     const moreBtn = document.getElementById('moreBtn');
     const navList2 = document.querySelector('.head_nav_list2');
+    navList2.style.height = "0px";
     moreBtn.addEventListener('click', function () {
-        if (navList2.style.display === 'none') {
-            navList2.style.display = 'block';
-        } else {
-            navList2.style.display = 'none';
+        if(navList2.style.height=='160px'){
+            navList2.style.height = "0";
+        }else{
+            navList2.style.height = "160px";
         }
+        // if (navList2.style.display === 'none') {
+        //     navList2.style.display = 'block';
+        // } else {
+        //     navList2.style.display = 'none';
+        // }
     });
 </script>
 
